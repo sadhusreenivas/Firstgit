@@ -1,0 +1,116 @@
+flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: DodgerBlue;
+  width: 100%;
+  max-width: 1600px;
+  height:100vh;
+  margin:40px auto;
+  display: flex;
+  position:relative;
+  }
+
+.flex-container > div {
+  /background-color: #f1f1f1;/
+  margin: 20px;
+  padding: 50px;
+  font-size: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  position: absolute;
+}
+
+.image-container{
+  border-radius: 15px 15px 15px  15px;
+  background: blue;
+  padding: 30px; 
+  width: 180px;
+  height:180px; 
+  box-shadow: 0px 0px 15px 15px yellow; 
+  background:url(pexels-photo-414102.jpeg) no-repeat center ;
+  background-size: cover;
+  top:0;
+  left:0;
+  z-index:1;
+  }
+
+  .personal-container{
+  border-radius: 25px 25px 25px 25px;
+  background: lightgreen;
+  padding: 40px; 
+  width: 300px;
+  height: 220px;
+  align-items:center;
+  top:220px;
+  left:150px;
+  z-index:0;
+  }
+
+   .personal-container h4{
+       text-shadow: 0 0 4px orange, 0 0 6px pink;
+       text-align: center;
+       color:maroon;
+   }
+
+  .link-container{ 
+  border-radius: 15px 80px 80px  15px;
+  background: yellow;
+  padding: 30px; 
+  width: 250px;
+  height: 200px;
+  bottom:0;
+  left:0;
+  z-index:1;
+  }
+
+  .link-container h1{
+    font-size:16px;
+    color: maroon;
+  }
+
+  .link-container ul{
+  list-style-image: url('html5.png');
+  
+  font-size:17px;
+  color: lightblue;
+  }
+
+  .table-container{
+  border-radius: 15px 15px 15px  15px;
+  background: orange;
+  padding: 30px; 
+  width: 600px;
+  height: 400px; 
+  top:0;
+  right:0;
+  z-index: 1;
+    }
+
+  .table-container table, th, td{
+    border: 1px solid indigo;
+    bgcolor=yellow;
+    color: indigo;
+    align:center;
+    table-layout:fixed;
+    width="60%";
+    font-size: 14px;
+    border-collapse: collapse;
+    }
+
+  .audio-container{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px; 
+    width: 280px;
+    height: 160px; 
+    background:purple;
+    bottom:0;
+    right:0;
+  }
+
+  .audio_container h6{
+   font-size:9px;
+   color:red;
+  }
+
+   

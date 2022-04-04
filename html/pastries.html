@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      RAJIS KITCHEN
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+    function printreview(){
+        var rowNum=3;
+        while(rowNum<11)
+        {
+        var x=document.review.email.value;
+        var y=document.review.ta1.value;
+        document.write(x+" "+y);
+
+        document.getElementById("tdEmail"+rowNum).innerText=x;
+        document.getElementById("tdReview"+rowNum).innerText=y;
+       rowNum++;
+
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+<header>
+<br>
+            <div align="center">
+                 <img src="images/logo.png" height="15%" width="20%"> </img>
+            </div>
+               <font size="40" color ="red"> <marquee behavior="alternate"> <b>Welcome to RAJIS Kitchen </b></marquee></font>
+            <br>
+</header>
+<nav>
+<a href="index.html"> <img src="IMAGES/homepageimage.jpg" width="50" height="50"> </a>
+<a href="ABOUTME.html"> 
+<input type="submit" value="ABOUTME" id="button1"/></a>
+<a href="RECIPES.html">
+<input type="submit" value="RECIPES" id="button1"/></a>
+<a href="PASTRIES.html">
+<input type="submit" value="PASTRIES" id="button1"/></a>
+<a href="Contact.html">
+<input type="submit" value="CONTACT" id="button1"/></a>
+<a href="PAYMENT.html">
+<input type="submit" value="PAYMENT" id="button1"/></a>
+</button>
+</nav>
+<article>
+        <img src="images/tutifruiti bread.jpg"height="15%" width="40%">
+        <section>
+        <h2 style="color:purple;text-align:center">Tutti Frutti Bread Recipe</h2>
+        <h3 style="color: brown;"> Frutti Bread Recipe</h3>
+            Tutti Frutti Bread which has soft buttery milk bread dotted with tutti fruity all over it. <br>The fruit bread is baked to perfection and a slice is perfect with a cup of milk.
+            <br>
+        </section>    
+        <div class="divcontainer">
+            <h4>PREP TIME: 15 mins</h4>
+            <h4>COOK TIME: 45 mins</h4>
+            <h4>RESTING TIME: 2 hrs.</h4>
+            <h4>TOTAL TIME: 3 hrs.</h4>
+            <h4>COURSE: Main Course</h4>
+            <h4>CUISINE: American </h4>
+        </div>
+         <section>
+            <h2 style="color: purple">INGREDIENTS</h2>
+        <ul type="square">
+            <li>Warm Milk - 1 ¼ cup</li>
+            <li>Sugar - 3 tbsp</li>
+            <li>Dry Yeast - 2 tsp</li>
+            <li>All Purpose Flour / Maida - 2 cups + more as needed</li>
+            <li>Wheat Flour - 1 cup</li>
+            <li>Salt - ¼ tsp</li>
+            <li>Butter - 4 tbsp.</li>
+            <li>Tutti Frutti - ¾ cup</li>
+        </ul>
+        </section>
+
+        <h2 style="color: purple">INSTRUCTIONS</h2>
+             
+        <ol type="1">
+            <li>Heat milk in a saucepan till warm, add butter and allow it to melt</li>
+            <li>Set aside to cool down.</li>
+            <li>Add sugar and mix well. Add in yeast and set aside for 5 mins so the yeast activates.
+            </li>
+            <li>Now take flour, wheat flour, salt in a bowl and whisk well.</li>
+            <li>Add in the tutti Frutti and mix well.</li>
+            <li> Add the milk mix and knead to a dough.</li>
+            <li>Cover and set aside for 1 hour.</li>
+            <li>Now punch back the air out and knead well.</li>
+            <li>Now spread it like a square in a floured surface and roll it tightly. Place it in a greased loaf pan.</li>
+            <li>Let it rise for 30 mins. During the last 10 mins of rising, preheat oven to 190 degree C / 375-degree F. oven.</li>
+            <li>Now brush the top with milk and bake for 35 to 40 mins in a 190 degree C / 375-degree F. oven</li>
+            <li>If is getting too dark, place a sheet of foil on top.</li>
+            <li>Remove from oven and cool completely. Slice and serve</li>
+            </ol>
+            AND the recipe is ready!!
+    </section>
+    </article>
+    <br>
+     <article>
+        <section>
+            <h3 style="color:purple"><u>Leave a review</u></h3>
+            <form name="review" onsubmit="printreview()">
+                <div>
+                    <label for="email">Email* :</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <br>
+                <div>
+                    <label for="review">Review :</label>
+                    <textarea name="ta1" id="review" cols="60" rows="5" required></textarea>
+                </div>
+                <br>
+                <input type="submit" value="Submit Review">
+
+                 <h3 style="color:purple"><u>Reviews</u></h3>
+            <table border="2" cellspacing="1" align="left" height="100" width="600"> 
+            <tr bgcolor="green">
+            <th width="20" style="color:white;">Email</th>
+            <th width="20" style="color:white;">Review</th>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail1"> Raji75@gmail.com</td>
+            <td style="color:red;" id="tdReview1"> Very Nice Pastry! </td>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail2"> example123@gmail.com</td>
+            <td style="color:red;" id="tdReview2"> Good Pastry!I Would like to Try!</td>
+            </tr>
+            <tr>     
+            <td style="color:purple;" id="tdEmail3"> </td>
+            <td style="color:red;" id="tdReview3">  </td>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail4"></td>
+            <td style="color:red;" id="tdReview4"></td>
+            </tr>
+            <tr>     
+            <td style="color:purple;" id="tdEmail5"> </td>
+            <td style="color:red;" id="tdReview5">  </td>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail6"> </td>
+            <td style="color:red;" id="tdReview6"></td>
+            </tr>
+
+            <td style="color:purple;" id="tdEmail7"> </td>
+            <td style="color:red;" id="tdReview7">  </td>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail8"> </td>
+            <td style="color:red;" id="tdReview8"></td>
+            </tr>
+
+            <td style="color:purple;" id="tdEmail9"> </td>
+            <td style="color:red;" id="tdReview9">  </td>
+            </tr>
+
+            <tr>     
+            <td style="color:purple;" id="tdEmail10"> </td>
+            <td style="color:red;" id="tdReview10"></td>
+            </tr>
+            
+            </table>
+            </form>
+        </section>
+        </article>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+    <footer>
+            <b>Contact Us:</b><BR>
+            Emai ID: Rajan.Raji75@gmail.com<BR>
+            Mobile No. 3175312456<BR>
+            Address: 1252 NICHOLEIS ROAD SUHANI
+         <BR>
+</footer>
+            
+</body>
+</html>
