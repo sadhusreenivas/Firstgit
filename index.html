@@ -1,0 +1,110 @@
+<!-- Name: Anshul Sood   Student Id: 991684420 -->
+<html>
+<title>
+Anshul Sood
+</title>
+<head>
+<link rel="stylesheet" href="a4css.css">
+<script type="text/javascript">
+ function validate(){
+   var fname=document.getElementById('firstname').value;
+   var lname=document.getElementById('lastname').value;
+   var snumber=document.getElementById('rollnumber').value;
+   window.alert(fname+" "+lname+"\n"+snumber);
+  
+}  
+</script>
+</head>
+
+<body>
+<div class="grid-container">
+
+<div class="grid-item-1">
+<h1> Assignment #3 / Anshul Sood / 991684420</h1> 
+</div>
+
+<div class="grid-item-2"> 
+<form name="myform" onSubmit="validate()" autocomplete="on">
+<fieldset>
+<legend> Personal Section</legend>
+<label>Last Name:</label>
+<input type ="text" id="lastname" name="lastname" placeholder="Last Name" size=36 default="Sood" autofocus required>
+<br>
+<br>
+<label>First name:</label>
+<input type ="text" id="firstname" name="firstname" placeholder="First Name" size=36 default="Anshul"autofocus required>
+<br>
+<br>
+<label>Student Number:</label>
+<input type ="text" id="rollnumber" name="rollnumber" placeholder="Student Number" size=30 default="991684420" autofocus>
+<br>
+<br>
+<label>Email:</label>
+<input type ="email" id="email" name="email" placeholder="email" default="soodansh@sheridan.desire2learn.com" size=40 autofocus>
+<br>
+
+</fieldset>
+</div>
+
+<div class="grid-item-3">
+<fieldset>
+<legend> Sheridan Experience</legend>
+<label> Start Date:</label>
+<input type ="date" name="date">
+<br>
+<br>
+<label>Years of experience:</label>
+<input type ="text" name="experience" placeholder="0 years" autofocus>
+<br>
+<br>
+<label>Sheridan Campus </label>
+<input type ="radio" name="campus" value="Davis" checked>Davis
+<input type ="radio" name="campus" value="Trafalgr">Trafalgr
+<input type ="radio" name="campus" value="HMC">HMC
+<br>
+<br>
+</fieldset>
+</div>
+
+<div class="grid-item-4">
+<fieldset>
+<legend> Financial Data Section</legend>
+<label>Amount of money received:</label>
+<input type ="text" name="amount" placeholder="$ 0" autofocus>
+<br>
+<br>
+<label> Money Sources: </label>
+<input type ="checkbox" name="Source">Scholarship 
+<input type ="checkbox" name="Source">RESP
+<input type ="checkbox" name="Source">Bursary
+<input type ="checkbox" name="Source">OSAP
+<br>
+
+</fieldset>
+</div>
+
+<div class="grid-item-5">
+<fieldset>
+<legend> Additional Information</legend>
+<textarea  name="message" cols="70" rows="8" placeholder ="Type your additional infromation here">
+</textarea>
+<br>
+
+</fieldset>
+</div>
+
+<div class="grid-item-6">
+<fieldset>
+<legend>Form Submission</legend> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" name="submit" value="Submit Form">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="reset" name="reset" value="Clear Form">
+</fieldset>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
